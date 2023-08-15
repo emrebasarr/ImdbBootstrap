@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <!--Bootstrap-->
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Movie Detail</h2>
+                    </div>
+                    <div class="card-body">
+                        <!--Forms-->
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label" >Movie Title</label>
+                                <input class="form-control" type="text" id="movietitle"/>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" >Genre</label>
+                                <input class="form-control" type="text" id="genre"/>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" >Director Name</label>
+                                <input class="form-control" type="text" id="director"/>
+                            </div>
+                            <!--Buton-->
+                            <button class="btn btn-primary" id="buton">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Movie List</h2>
+                    </div>
+
+                    <!--Table-->
+                        <table class="table table-hover">
+                            <!--Table header-->
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Movie Title</th>
+                                    <th>Genre</th>
+                                    <th>Director</th>
+                                </tr>
+                            </thead>
+                            <!--Table Body-->
+                            <tbody id="satir">
+                                <tr>
+                                    <td>1</td>
+                                    <td>The Matrix</td>
+                                    <td>Sci-fi</td>
+                                    <td>Wachovski Sisters</td>
+                                </tr>
+                                <tr id="tr">  
+
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Javascript-->
+    <script src="Imdb.js"></script>
+</body>
+</html>
